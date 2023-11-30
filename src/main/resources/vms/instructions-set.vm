@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+#set($str = "hello word")
+#set($int = 10)
+#set($arr = [1,2,3,4])
+#set($boolean = true)
+#set($map={"key1":"value1","key2":"value2"})
+
+#set($name = "ken")
+#set($str2 = "hello, how are you , $name !")
+
+字符串 : $str ---- ${str}
+字符串 : $str2 ---- ${str2}
+整形 : $int ---- ${int}
+数组类型 : arr ---- ${arr}
+布尔类型 : boolean ---- ${boolean}
+
+map.key1 : $map.key1 --- ${map.key1}
+map.ley2 : $map.key2 --- ${map.key2}
+
+</body>
+</html>

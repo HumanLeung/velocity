@@ -1,0 +1,33 @@
+package ${package}.controller
+
+import ${package}.entity.${className};
+import ${package}.service.${service};
+import ${package}.utils.Result;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/${classname}")
+public class ${className}Controller{
+
+    @Autowired
+    private ${className}Service ${classname}Service;
+
+    @RequestMapping("/list")
+    public ResponseEntity list(){
+        List<${className}> ${classname}s = null;
+        try{
+            ${classname} = ${classname}Serivce.list();
+        } catch (Exception e){
+            e.printStackTrace();
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+}

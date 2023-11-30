@@ -1,0 +1,24 @@
+package ${package}.service.impl;
+
+import ${package}.dao.${className}Dao;
+import ${package}.entity.${className};
+import ${package}.service.${className}Serivce;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+public class ${className}ServiceImpl implements ${className}Service {
+
+    @Autowired
+    private ${className}Dao ${classname}Dao;
+
+    public List<${className}> list(){
+        return ${className}Dao.selectAll();
+    }
+
+    public void save(${className} ${classname}){
+        ${classname}Dao.insert(${classname});
+    }
+}

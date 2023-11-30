@@ -1,0 +1,13 @@
+package ${package}.serivce;
+
+import ${package}.entity.${className};
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public interface ${className}Serivce}{
+    List<${className}> list();
+    void save(${className} user);
+    void update(${className} user);
+    void delete(Integer[] ids);
+
+}
